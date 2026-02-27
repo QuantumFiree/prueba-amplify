@@ -26,7 +26,7 @@ function CargaArchivos() {
 
     try {
       await uploadData({
-        path: `uploads/${file.name}`,
+        path: `public/${file.name}`,
         data: file,
         options: {
           onProgress: ({ transferredBytes, totalBytes }) => {
