@@ -39,12 +39,6 @@ function Home() {
   return (
     <div className="home-wrapper">
 
-      <nav className="home-nav">
-        <Link to="/todos" className="home-nav-link">
-          Ir a Todos →
-        </Link>
-      </nav>
-
       <header className="home-header">
         <div className="home-badge">AWS Cloud Services</div>
         <h1 className="home-title">AWS Amplify</h1>
@@ -202,6 +196,15 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <div className="home-cta">
+        <Link to="/todos" className="home-cta-link">
+          Ver Todos →
+        </Link>
+        <Link to="/carga-archivos" className="home-cta-link">
+          📁 Carga de Archivos →
+        </Link>
+      </div>
 
       <footer className="home-footer">
         <p className="home-footer-text">Proyecto de demostración y configuracion - AWS Amplify 2026</p>

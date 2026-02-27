@@ -10,9 +10,14 @@
 .home-nav {
   display: flex;
   justify-content: flex-end;
-  padding: 1.5rem 2rem 0;
-  position: relative;
-  z-index: 10;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .home-nav-link {
@@ -306,4 +311,31 @@
 
 .home-footer-text {
   font-size: 1.125rem;
+}
+
+/* Eliminar o ignorar .home-nav y .home-nav-link, agregar: */
+
+.home-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 1rem 0;
+}
+
+.home-cta-link {
+  background: linear-gradient(to right, #f97316, #ec4899);
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.4);
+}
+
+.home-cta-link:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
 }

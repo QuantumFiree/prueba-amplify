@@ -1,0 +1,124 @@
+.todos-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0f172a, #581c87, #0f172a);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3rem 1rem;
+}
+
+.todos-container {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.todos-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.todos-btn-new {
+  display: block;
+  width: 100%;
+  padding: 0.875rem;
+  background: linear-gradient(to right, #f97316, #ec4899);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: opacity 0.2s;
+}
+
+.todos-btn-new:hover {
+  opacity: 0.85;
+}
+
+.todos-btn-back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.todos-btn-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.todos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.todos-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  color: #f1f5f9;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.todos-item:hover {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: rgba(239, 68, 68, 0.5);
+  transform: scale(1.01);
+}
+
+.todos-btn-signout {
+  display: block;
+  width: 100%;
+  padding: 0.875rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background 0.2s;
+}
+
+.todos-btn-signout:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.todos-info {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.todos-info a {
+  color: #f97316;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.todos-info a:hover {
+  text-decoration: underline;
+}
