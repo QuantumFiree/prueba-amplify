@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import { useAuthenticator } from "@aws-amplify/ui-react";
 
 function Home() {
+  const { signOut } = useAuthenticator();
+
   const teamMembers = [
     {
       name: "Ivan",
@@ -204,6 +207,9 @@ function Home() {
         <Link to="/carga-archivos" className="home-cta-link">
           📁 Carga de Archivos →
         </Link>
+        <button onClick={signOut} className="home-cta-link home-signout-btn">
+          🔓 Cerrar Sesión
+        </button>
       </div>
 
       <footer className="home-footer">
